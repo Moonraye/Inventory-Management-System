@@ -1,3 +1,5 @@
+using Inventory_Manager.Services;
+
 namespace Inventory_Manager
 {
     internal static class Program
@@ -6,7 +8,20 @@ namespace Inventory_Manager
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form());
+
+            var dbService = new SupabaseService();
+            var inventoryService = new InventoryService(dbService);
+
+            LoginForm loginForm = new LoginForm(inventoryService, dbService);
+
+            if (loginForm.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new MainForm());
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

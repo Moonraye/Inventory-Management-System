@@ -17,6 +17,37 @@ namespace Inventory_Manager.Services
             await supabase.InitializeAsync(); // Ініціалізація підключення до Supabase
         }
 
+        
+        public async Task<bool> LoginAsync(string email, string password) // логін через Supabase Auth
+        {
+            try
+            {
+                
+                var session = await supabase.Auth.SignIn(email, password); // Використовуємо вбудований модуль авторизації
+                return session != null && session.User != null; // Якщо сесія успішно створена і користувач авторизований, повертаємо true
+            }
+            catch (Exception) // Якщо пошта чи пароль не підходять, Supabase викине Exception
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> RegisterAsync(string email, string password) // реєстрація нового користувача
+
+        {
+            try
+            {
+                var session = await supabase.Auth.SignUp(email, password); // Якщо помилки не було і юзер створився - повертаємо true
+                return session != null && session.User != null;
+            }
+            catch (Exception ex) // Supabase викине помилку, якщо такий email вже існує, або пароль коротший за 6 символів
+
+            {
+                System.Windows.Forms.MessageBox.Show($"Відповідь від сервера Supabase:\n\n{ex.Message}", "Деталі помилки", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+                return false;
+            }
+        }
+
         public async Task<List<Item>> GetAllItemsAsync()
         {
             var itemsList = new List<Item>(); // Список для зберігання товарів, отриманих з бази даних

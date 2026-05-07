@@ -1,0 +1,241 @@
+﻿namespace Inventory_Manager
+{
+    partial class AddItemForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            Label countryLabel;
+            Label nameLabel;
+            Label priceLabel;
+            Label articleLabel;
+            expirationDate = new Label();
+            deliveryLabel = new Label();
+            dtpExpiration = new DateTimePicker();
+            dtpDelivered = new DateTimePicker();
+            countLabel = new Label();
+            txtCount = new TextBox();
+            txtArticle = new TextBox();
+            txtPrice = new TextBox();
+            txtName = new TextBox();
+            txtCountry = new TextBox();
+            btnSubmit = new Button();
+            countryLabel = new Label();
+            nameLabel = new Label();
+            priceLabel = new Label();
+            articleLabel = new Label();
+            SuspendLayout();
+            // 
+            // countryLabel
+            // 
+            countryLabel.AutoEllipsis = true;
+            countryLabel.AutoSize = true;
+            countryLabel.Font = new Font("Segoe UI", 14F);
+            countryLabel.ForeColor = Color.White;
+            countryLabel.Location = new Point(724, 116);
+            countryLabel.Name = "countryLabel";
+            countryLabel.Size = new Size(128, 25);
+            countryLabel.TabIndex = 33;
+            countryLabel.Text = "Enter Country";
+            // 
+            // nameLabel
+            // 
+            nameLabel.AutoEllipsis = true;
+            nameLabel.AutoSize = true;
+            nameLabel.Font = new Font("Segoe UI", 14F);
+            nameLabel.ForeColor = Color.White;
+            nameLabel.Location = new Point(408, 114);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new Size(111, 25);
+            nameLabel.TabIndex = 32;
+            nameLabel.Text = "Enter Name";
+            // 
+            // priceLabel
+            // 
+            priceLabel.AutoEllipsis = true;
+            priceLabel.AutoSize = true;
+            priceLabel.Font = new Font("Segoe UI", 14F);
+            priceLabel.ForeColor = Color.White;
+            priceLabel.Location = new Point(625, 115);
+            priceLabel.Name = "priceLabel";
+            priceLabel.Size = new Size(103, 25);
+            priceLabel.TabIndex = 31;
+            priceLabel.Text = "Enter Price";
+            // 
+            // articleLabel
+            // 
+            articleLabel.AutoEllipsis = true;
+            articleLabel.AutoSize = true;
+            articleLabel.Font = new Font("Segoe UI", 14F);
+            articleLabel.ForeColor = Color.White;
+            articleLabel.Location = new Point(514, 114);
+            articleLabel.Name = "articleLabel";
+            articleLabel.Size = new Size(115, 25);
+            articleLabel.TabIndex = 30;
+            articleLabel.Text = "Enter Article";
+            // 
+            // expirationDate
+            // 
+            expirationDate.AutoSize = true;
+            expirationDate.Font = new Font("Segoe UI", 14F);
+            expirationDate.Location = new Point(631, 195);
+            expirationDate.Name = "expirationDate";
+            expirationDate.Size = new Size(190, 25);
+            expirationDate.TabIndex = 39;
+            expirationDate.Text = "Enter Expiration Date";
+            // 
+            // deliveryLabel
+            // 
+            deliveryLabel.AutoSize = true;
+            deliveryLabel.Font = new Font("Segoe UI", 14F);
+            deliveryLabel.Location = new Point(429, 195);
+            deliveryLabel.Name = "deliveryLabel";
+            deliveryLabel.Size = new Size(173, 25);
+            deliveryLabel.TabIndex = 38;
+            deliveryLabel.Text = "Enter Delivery Date";
+            // 
+            // dtpExpiration
+            // 
+            dtpExpiration.Location = new Point(631, 223);
+            dtpExpiration.Name = "dtpExpiration";
+            dtpExpiration.Size = new Size(200, 23);
+            dtpExpiration.TabIndex = 37;
+            // 
+            // dtpDelivered
+            // 
+            dtpDelivered.Location = new Point(413, 223);
+            dtpDelivered.Name = "dtpDelivered";
+            dtpDelivered.Size = new Size(200, 23);
+            dtpDelivered.TabIndex = 36;
+            // 
+            // countLabel
+            // 
+            countLabel.AutoSize = true;
+            countLabel.Font = new Font("Segoe UI", 14F);
+            countLabel.ForeColor = Color.White;
+            countLabel.Location = new Point(563, 259);
+            countLabel.Name = "countLabel";
+            countLabel.Size = new Size(112, 25);
+            countLabel.TabIndex = 35;
+            countLabel.Text = "Enter Count";
+            // 
+            // txtCount
+            // 
+            txtCount.BackColor = Color.FromArgb(22, 22, 22);
+            txtCount.Location = new Point(536, 287);
+            txtCount.Name = "txtCount";
+            txtCount.Size = new Size(161, 23);
+            txtCount.TabIndex = 34;
+            // 
+            // txtArticle
+            // 
+            txtArticle.BackColor = Color.FromArgb(22, 22, 22);
+            txtArticle.Location = new Point(520, 143);
+            txtArticle.Name = "txtArticle";
+            txtArticle.Size = new Size(100, 23);
+            txtArticle.TabIndex = 29;
+            // 
+            // txtPrice
+            // 
+            txtPrice.BackColor = Color.FromArgb(22, 22, 22);
+            txtPrice.Location = new Point(626, 143);
+            txtPrice.Name = "txtPrice";
+            txtPrice.Size = new Size(100, 23);
+            txtPrice.TabIndex = 28;
+            // 
+            // txtName
+            // 
+            txtName.BackColor = Color.FromArgb(22, 22, 22);
+            txtName.Location = new Point(412, 143);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(100, 23);
+            txtName.TabIndex = 27;
+            // 
+            // txtCountry
+            // 
+            txtCountry.BackColor = Color.FromArgb(22, 22, 22);
+            txtCountry.Location = new Point(731, 143);
+            txtCountry.Name = "txtCountry";
+            txtCountry.Size = new Size(100, 23);
+            txtCountry.TabIndex = 26;
+            // 
+            // btnSubmit
+            // 
+            btnSubmit.BackColor = Color.FromArgb(22, 22, 22);
+            btnSubmit.FlatAppearance.BorderColor = Color.FromArgb(174, 153, 117);
+            btnSubmit.Font = new Font("Segoe UI", 14F);
+            btnSubmit.ForeColor = Color.White;
+            btnSubmit.Location = new Point(525, 340);
+            btnSubmit.Name = "btnSubmit";
+            btnSubmit.Size = new Size(181, 66);
+            btnSubmit.TabIndex = 40;
+            btnSubmit.Text = "ADD ITEM";
+            btnSubmit.UseVisualStyleBackColor = false;
+            btnSubmit.Click += btnSubmit_Click;
+            // 
+            // AddItemForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(22, 22, 22);
+            ClientSize = new Size(1305, 526);
+            Controls.Add(btnSubmit);
+            Controls.Add(expirationDate);
+            Controls.Add(deliveryLabel);
+            Controls.Add(dtpExpiration);
+            Controls.Add(dtpDelivered);
+            Controls.Add(countLabel);
+            Controls.Add(txtCount);
+            Controls.Add(countryLabel);
+            Controls.Add(nameLabel);
+            Controls.Add(priceLabel);
+            Controls.Add(articleLabel);
+            Controls.Add(txtArticle);
+            Controls.Add(txtPrice);
+            Controls.Add(txtName);
+            Controls.Add(txtCountry);
+            ForeColor = Color.White;
+            Name = "AddItemForm";
+            Text = "AddItemForm";
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label expirationDate;
+        private Label deliveryLabel;
+        private DateTimePicker dtpExpiration;
+        private DateTimePicker dtpDelivered;
+        private Label countLabel;
+        private TextBox txtCount;
+        private TextBox txtArticle;
+        private TextBox txtPrice;
+        private TextBox txtName;
+        private TextBox txtCountry;
+        private Button btnSubmit;
+    }
+}
