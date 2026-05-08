@@ -43,10 +43,12 @@
             txtName = new TextBox();
             txtCountry = new TextBox();
             btnSubmit = new Button();
+            AddItemPanel = new Panel();
             countryLabel = new Label();
             nameLabel = new Label();
             priceLabel = new Label();
             articleLabel = new Label();
+            AddItemPanel.SuspendLayout();
             SuspendLayout();
             // 
             // countryLabel
@@ -55,7 +57,7 @@
             countryLabel.AutoSize = true;
             countryLabel.Font = new Font("Segoe UI", 14F);
             countryLabel.ForeColor = Color.White;
-            countryLabel.Location = new Point(724, 116);
+            countryLabel.Location = new Point(319, 14);
             countryLabel.Name = "countryLabel";
             countryLabel.Size = new Size(128, 25);
             countryLabel.TabIndex = 33;
@@ -67,7 +69,7 @@
             nameLabel.AutoSize = true;
             nameLabel.Font = new Font("Segoe UI", 14F);
             nameLabel.ForeColor = Color.White;
-            nameLabel.Location = new Point(408, 114);
+            nameLabel.Location = new Point(3, 12);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new Size(111, 25);
             nameLabel.TabIndex = 32;
@@ -79,7 +81,7 @@
             priceLabel.AutoSize = true;
             priceLabel.Font = new Font("Segoe UI", 14F);
             priceLabel.ForeColor = Color.White;
-            priceLabel.Location = new Point(625, 115);
+            priceLabel.Location = new Point(220, 13);
             priceLabel.Name = "priceLabel";
             priceLabel.Size = new Size(103, 25);
             priceLabel.TabIndex = 31;
@@ -91,7 +93,7 @@
             articleLabel.AutoSize = true;
             articleLabel.Font = new Font("Segoe UI", 14F);
             articleLabel.ForeColor = Color.White;
-            articleLabel.Location = new Point(514, 114);
+            articleLabel.Location = new Point(109, 12);
             articleLabel.Name = "articleLabel";
             articleLabel.Size = new Size(115, 25);
             articleLabel.TabIndex = 30;
@@ -101,7 +103,7 @@
             // 
             expirationDate.AutoSize = true;
             expirationDate.Font = new Font("Segoe UI", 14F);
-            expirationDate.Location = new Point(631, 195);
+            expirationDate.Location = new Point(245, 93);
             expirationDate.Name = "expirationDate";
             expirationDate.Size = new Size(190, 25);
             expirationDate.TabIndex = 39;
@@ -111,7 +113,7 @@
             // 
             deliveryLabel.AutoSize = true;
             deliveryLabel.Font = new Font("Segoe UI", 14F);
-            deliveryLabel.Location = new Point(429, 195);
+            deliveryLabel.Location = new Point(20, 93);
             deliveryLabel.Name = "deliveryLabel";
             deliveryLabel.Size = new Size(173, 25);
             deliveryLabel.TabIndex = 38;
@@ -119,14 +121,14 @@
             // 
             // dtpExpiration
             // 
-            dtpExpiration.Location = new Point(631, 223);
+            dtpExpiration.Location = new Point(235, 121);
             dtpExpiration.Name = "dtpExpiration";
             dtpExpiration.Size = new Size(200, 23);
             dtpExpiration.TabIndex = 37;
             // 
             // dtpDelivered
             // 
-            dtpDelivered.Location = new Point(413, 223);
+            dtpDelivered.Location = new Point(8, 121);
             dtpDelivered.Name = "dtpDelivered";
             dtpDelivered.Size = new Size(200, 23);
             dtpDelivered.TabIndex = 36;
@@ -136,7 +138,7 @@
             countLabel.AutoSize = true;
             countLabel.Font = new Font("Segoe UI", 14F);
             countLabel.ForeColor = Color.White;
-            countLabel.Location = new Point(563, 259);
+            countLabel.Location = new Point(164, 157);
             countLabel.Name = "countLabel";
             countLabel.Size = new Size(112, 25);
             countLabel.TabIndex = 35;
@@ -144,40 +146,41 @@
             // 
             // txtCount
             // 
-            txtCount.BackColor = Color.FromArgb(22, 22, 22);
-            txtCount.Location = new Point(536, 287);
+            txtCount.BackColor = Color.White;
+            txtCount.ForeColor = Color.Black;
+            txtCount.Location = new Point(142, 185);
             txtCount.Name = "txtCount";
             txtCount.Size = new Size(161, 23);
             txtCount.TabIndex = 34;
             // 
             // txtArticle
             // 
-            txtArticle.BackColor = Color.FromArgb(22, 22, 22);
-            txtArticle.Location = new Point(520, 143);
+            txtArticle.BackColor = Color.White;
+            txtArticle.Location = new Point(116, 41);
             txtArticle.Name = "txtArticle";
             txtArticle.Size = new Size(100, 23);
             txtArticle.TabIndex = 29;
             // 
             // txtPrice
             // 
-            txtPrice.BackColor = Color.FromArgb(22, 22, 22);
-            txtPrice.Location = new Point(626, 143);
+            txtPrice.BackColor = Color.White;
+            txtPrice.Location = new Point(226, 41);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(100, 23);
             txtPrice.TabIndex = 28;
             // 
             // txtName
             // 
-            txtName.BackColor = Color.FromArgb(22, 22, 22);
-            txtName.Location = new Point(412, 143);
+            txtName.BackColor = Color.White;
+            txtName.Location = new Point(7, 41);
             txtName.Name = "txtName";
             txtName.Size = new Size(100, 23);
             txtName.TabIndex = 27;
             // 
             // txtCountry
             // 
-            txtCountry.BackColor = Color.FromArgb(22, 22, 22);
-            txtCountry.Location = new Point(731, 143);
+            txtCountry.BackColor = Color.White;
+            txtCountry.Location = new Point(335, 41);
             txtCountry.Name = "txtCountry";
             txtCountry.Size = new Size(100, 23);
             txtCountry.TabIndex = 26;
@@ -186,9 +189,10 @@
             // 
             btnSubmit.BackColor = Color.FromArgb(22, 22, 22);
             btnSubmit.FlatAppearance.BorderColor = Color.FromArgb(174, 153, 117);
+            btnSubmit.FlatStyle = FlatStyle.Flat;
             btnSubmit.Font = new Font("Segoe UI", 14F);
             btnSubmit.ForeColor = Color.White;
-            btnSubmit.Location = new Point(525, 340);
+            btnSubmit.Location = new Point(131, 238);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(181, 66);
             btnSubmit.TabIndex = 40;
@@ -196,32 +200,46 @@
             btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += btnSubmit_Click;
             // 
+            // AddItemPanel
+            // 
+            AddItemPanel.Controls.Add(btnSubmit);
+            AddItemPanel.Controls.Add(expirationDate);
+            AddItemPanel.Controls.Add(txtCountry);
+            AddItemPanel.Controls.Add(deliveryLabel);
+            AddItemPanel.Controls.Add(txtName);
+            AddItemPanel.Controls.Add(dtpExpiration);
+            AddItemPanel.Controls.Add(txtPrice);
+            AddItemPanel.Controls.Add(dtpDelivered);
+            AddItemPanel.Controls.Add(txtArticle);
+            AddItemPanel.Controls.Add(countLabel);
+            AddItemPanel.Controls.Add(articleLabel);
+            AddItemPanel.Controls.Add(txtCount);
+            AddItemPanel.Controls.Add(priceLabel);
+            AddItemPanel.Controls.Add(countryLabel);
+            AddItemPanel.Controls.Add(nameLabel);
+            AddItemPanel.Dock = DockStyle.Fill;
+            AddItemPanel.Location = new Point(0, 0);
+            AddItemPanel.MaximumSize = new Size(447, 307);
+            AddItemPanel.MinimumSize = new Size(447, 307);
+            AddItemPanel.Name = "AddItemPanel";
+            AddItemPanel.Size = new Size(447, 307);
+            AddItemPanel.TabIndex = 41;
+            // 
             // AddItemForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(22, 22, 22);
-            ClientSize = new Size(1305, 526);
-            Controls.Add(btnSubmit);
-            Controls.Add(expirationDate);
-            Controls.Add(deliveryLabel);
-            Controls.Add(dtpExpiration);
-            Controls.Add(dtpDelivered);
-            Controls.Add(countLabel);
-            Controls.Add(txtCount);
-            Controls.Add(countryLabel);
-            Controls.Add(nameLabel);
-            Controls.Add(priceLabel);
-            Controls.Add(articleLabel);
-            Controls.Add(txtArticle);
-            Controls.Add(txtPrice);
-            Controls.Add(txtName);
-            Controls.Add(txtCountry);
+            ClientSize = new Size(448, 314);
+            Controls.Add(AddItemPanel);
             ForeColor = Color.White;
+            MaximumSize = new Size(464, 353);
+            MinimumSize = new Size(464, 353);
             Name = "AddItemForm";
             Text = "AddItemForm";
+            AddItemPanel.ResumeLayout(false);
+            AddItemPanel.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -237,5 +255,6 @@
         private TextBox txtName;
         private TextBox txtCountry;
         private Button btnSubmit;
+        private Panel AddItemPanel;
     }
 }
