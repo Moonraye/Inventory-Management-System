@@ -2,7 +2,7 @@
 
 namespace Inventory_Manager.Services
 {
-    internal class InventoryService
+    public class InventoryService
     {
         private List<Item> inventory; // Створюємо список для зберігання товарів в пам'яті
 
@@ -13,6 +13,17 @@ namespace Inventory_Manager.Services
             inventory = new List<Item>();
             _dbService = dbService; 
         }
+
+        public async Task<bool> LoginUserAsync(string email, string password) // Метод для логіну користувача через Supabase Auth
+        {
+            return await _dbService.LoginAsync(email, password); // Використовуємо метод логіну з SupabaseService і повертаємо результат
+        }
+
+        public async Task<bool> RegisterUserAsync(string email, string password)
+        {
+            return await _dbService.RegisterAsync(email, password);
+        }
+
         public async Task LoadFromDatabaseAsync() // Метод для завантаження даних з бази даних при запуску програми
         {
             inventory = await _dbService.GetAllItemsAsync(); // Заповнюємо invenory даними з бази
